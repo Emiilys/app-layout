@@ -13,7 +13,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Layout',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 167, 81, 28)),
         useMaterial3: true,
       ),
       home: const HomePage(title: 'Programa Layout'),
@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 alignment: Alignment.center,
                 // color: Colors.pink[200], // Cor rosa claro
-                child: const Text('Rodapé Superior'),
+                child: const Text('Layout Superior'),
               ),
             ),
 
@@ -75,13 +75,13 @@ class _HomePageState extends State<HomePage> {
                         boxShadow: const [
                           BoxShadow(
                             color: Colors.black26, // Cor da sombra
-                            blurRadius: 10, // Raio de desfoque
-                            offset: Offset(0, 4), // Deslocamento da sombra
+                            blurRadius: 20, // Raio de desfoque
+                            offset: Offset(0, 6), // Deslocamento da sombra
                           ),
                         ],
                       ),
 
-                      child: const Text('Olá'),
+                      child: const Text('Meu App'),
                     ),
                   ),
                   Expanded(
